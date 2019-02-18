@@ -30,6 +30,21 @@
 			<link rel="stylesheet" href="css/main.css">
 			<link rel="stylesheet" href="css/style.css">
 			<link rel="stylesheet" type="text/css" href="css/modal.css">
+			<link rel="stylesheet" type="text/css" href="css/custom-tooltip">
+			<style type="text/css">
+				
+				#loc-btn
+				{
+					opacity: 0.2;
+					width:10px;
+					height: 10px;
+					background-color: inherit;
+
+				}
+
+
+
+			</style>
 		</head>
 		<body>
 
@@ -44,10 +59,10 @@
 				          <li class="menu-active"><a href="#home">Home</a></li>
 				          <li class="menu-has-chilfdren"><a href="#videos">Paper</a>
                               <ul>
-				              <li><a href="generic.html">Call For Paper</a></li>
-				              <li><a href="elements.html">Camera Ready Paper</a></li>
-				               <li><a href="generic.html">Paper Publication</a></li>
-				              <li><a href="elements.html">Paper Award</a></li>
+				              <li><a href="#paper">Call For Paper</a></li>
+				              <li><a href="#paper">Camera Ready Paper</a></li>
+				               <li><a href="#paper">Paper Publication</a></li>
+				              <li><a href="#paper">Paper Award</a></li>
 				              </ul>
 
 				          </li>
@@ -67,8 +82,108 @@
 
 				          </li>
 
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
 
 
+
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-9 col-md-12">
+							<h6 class="" style="color: white;font-size: 24px;">Science, Engineering, and Humanities for advancement of innovation and Technology</h6>
+							<h2> <span style="font-size:1.2em;font-style:italic;font-weight:bold;">5<sup style="text-transform:lowercase;font-weight:large;color:white;">th</sup></span> Annual Research Conference </h2>
+							<!--
+							<h1 class="text-white">
+								Year End Conference				
+							</h1>
+
+						    -->
+						     <div>Paper submission deadline: <del><span style="color:#ff0000"> April 15, 2018 </span></del></div>
+                             <div>Extended Paper submission deadline: <del><?= date('M d, Y', $deadline) ?></del></div>
+                             <div>Notification of Acceptance: <del> <span style="color:#ff0000">April 30, 2018</span></del></div>
+
+							
+							<div class="countdown">
+								<div id="timer" class="text-white"></div>
+							</div>
+
+							<div class="venue-location">
+							<h4><span class="lnr lnr-calendar-full"></span>   31<sup>th</sup> may, 2019</h4>
+ 
+							    <h4>
+								<button  type="button" data-toggle="modal" data-target="#conference-venue" id="loc-btn">
+								 <span class="lnr lnr-map"></span>
+								  AASTU,Conference Hall
+                                
+                                </button>
+                                 </h4>
+                              
+
+                             	<!-- modal large -->
+			    <div class="modal fade" id="conference-venue" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="largeModalLabel"> <h3 class="section-title">Conference Venue</h3></h5>
+							
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+					</div>
+					<div class="modal-body">
+					
+					       
+
+                            <section id="venue" class="section location col-md-12">
+                            <div class="container">
+                           
+        
+	                        <div class="row">
+	                        <div class="col-md-12">
+	                        <p>In Addis Ababa Science and Technology University.</p>
+	                        </div>
+	                        <div class="col-sm-4">
+
+                            </div>
+							<div class="col-sm-12">
+							<div class="col-md-8">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31534.740290094775!2d38.786346743371304!3d8.894227963475382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32ad809ea3e79e3!2sAddis+Ababa+Science+and+Technology+University!5e0!3m2!1sen!2sbd!4v1513724183519" width="100%" height="400" frameborder="0" style="border:0;margin:0px auto !important;" allowfullscreen></iframe>
+							</div>
+							</div>
+							</div>
+							</div>
+							</section>
+
+                        
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-primary">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+					</div>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->				
+	
+		
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -125,119 +240,46 @@ window.onclick = function(event) {
 
 
 
-				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
-			    	</div>
-			    </div>
-			  </header><!-- #header -->
 
 
-			<!-- start banner Area -->
-			<section class="banner-area relative" id="home">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row fullscreen d-flex align-items-center justify-content-center">
-						<div class="banner-content col-lg-9 col-md-12">
-							<h6>Science, Engineering, and Humanities for advancement of innovation and Technology</h6>
-							<h2> <span style="font-size:1.2em;font-style:italic;font-weight:bold;">5<sup style="text-transform:lowercase;font-weight:normal;">th</sup></span> Annual Research Conference </h2>
-							<!--
-							<h1 class="text-white">
-								Year End Conference				
-							</h1>
 
-						    -->
-							
-							<div class="countdown">
-								<div id="timer" class="text-white"></div>
-							</div>
-							<h4><span class="lnr lnr-calendar-full"></span>   30th may, 2019</h4>
-							<h4><span class="lnr lnr-map"></span>  AASTU,Conference Hall</h4>
-						</div>											
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->				
-	
-			<!-- Start home-video Area -->
-			<section class="home-video-area">
-				<div class="container-fluid">
-					<div class="row justify-content-end align-items-center">
-						<div class="col-lg-4 no-padding about-right">
-							<p class="top-title">Tutorial for beginner</p>
-							<h1>We Telecast our <br>
-							Coffee Making Live</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.
-							</p>
-						</div>
-						<section class="video-area col-lg-6 no-padding">
-							<div class="overlay overlay-bg"></div>
-							<div class="containers">
-								<div class="video-content">
-									<img class="img-fluid" src="img/about1.jpg" alt="">
-								</div>
-							</div>
-						</section>											
-					</div>
-				</div>	
-			</section>
-			<!-- End home-aboutus Area -->
+		
+
+			
+	    <section id="paper" class="section topics  section-gap" style="color:#b4b4b4;">
+        <div class="container">
+        <h3 class="section-title">Call for Papers</h3>
+        <p align="justify">The conference aims to assemble researchers and scholars from various disciplines
+        in order to communicate their research outputs and re-lated achievements on science, Engineering and
+        Humanities. Regular papers, Posters, & Plenary papers will be accepted to make the confer-ence more
+        compressive, enlightening and enjoyable event.</p>
+
+        <p>Researchers, Academicians, Postgraduate students, Policy makers from academia, research institutions, industries, NGOs, and other Government bodies are invited to  <span style="color:#f44">submit Full Papers until <?= date("M d, Y", $deadline) ?></span>  
+        within the sub-themes indicated below. <!-- Papers should be submitted through online at 
+        http://www.aastu.edu.et/conference2019/ --></p>
+    
+        <h3>Sub-themes:</h3>
+        <ul >
+            <li>Environmental and Sustainable Energy</li>
+            <li>Material Sciences and Nanotechnology</li>
+            <li>Artificial Intelligence and Robotics</li>
+            <li>High Performance Computing and Big Data Analytics</li>
+            <li>Information and Communication Technologies</li>
+            <li>Construction and Transport Technologies</li>
+            <li>Biotechnology and Bioprocess</li>
+            <li>Artificial intelligence</li>
+            <li>Entrepreneurship and Technology-based Ventures</li>
+            <li>Technology for Sustainable Development</li>
+            <li>Mineral Exploration, Extraction and Processing</li>
+            <li>Social Sciences and Humanities, and</li>
+            <li>Any topic related to Science, Engineering and Social Sciences.</li>
+            </ul>
+            </div>
+            </section>
 
 
-			<!-- Start home-aboutus Area -->
-			<section class="home-aboutus-area">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-lg-8 no-padding about-left">
-							<img class="img-fluid" src="img/about2.jpg" alt="">
-						</div>
-						<div class="col-lg-4 no-padding about-right">
-							<p class="top-title">24/7 Support system</p>
-							<h1 class="text-white">We Telecast our<br>
-							Coffee Making Live</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.
-							</p>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End home-aboutus Area -->
-
-			<!-- Start video-sec Area -->
-			<section class="video-sec-area section-gap" id="videos">
-				<div class="container">
-					<div class="row justify-content-center align-items-center ">
-						<div class="col-lg-6 video-left">
-							<h6>Brand new app to blow your mind</h6>
-							<h1>We’ve made a life <br>
-							that will change you</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-							</p>
-							<a class="primary-btn" href="#">Get Started now</a>
-						</div>
-						<div class="col-lg-6">
-							<div class="active-video-carusel">
-									<div class="item video-right justify-content-center align-items-center d-flex" style="background:url(img/video-bg.jpg) no-repeat center;background-size: cover;">
-									<div class="overlay overlay-bg"></div>
-									<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid" src="img/play-icon.png" alt=""></a>
-									</div>
-									<div class="item video-right justify-content-center align-items-center d-flex" style="background:url(img/video-bg.jpg) no-repeat center;background-size: cover;">
-									<div class="overlay overlay-bg"></div>
-									<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid" src="img/play-icon.png" alt=""></a>
-									</div>	
-									<div class="item video-right justify-content-center align-items-center d-flex" style="background:url(img/video-bg.jpg) no-repeat center;background-size: cover;">
-									<div class="overlay overlay-bg"></div>
-									<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid" src="img/play-icon.png" alt=""></a>
-									</div>																		
-							</div>							
-						</div> 
-					</div>
-				</div>	
+			</div>
+			</div>	
 			</section>
 			<!-- End video-sec Area -->
 
@@ -617,138 +659,145 @@ window.onclick = function(event) {
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10"> Conference 2018 </h1>
-								<p>Event Schedule of the conference</p>
+								<h1> Orgainizing Committee Memebers </h1>
+								
 							</div>
 						</div>
 					</div>					
-					
+		
+
                     <!--              row                  -->
 
 					<div class="row">
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
-								<h1 class="package-no">01</h1>
-								<h4>Economy</h4>
-								<p>For the individuals</p>
+
+                        	<img src="img/DrAdane.png" class="img-circle"  width="150px" height="150px" alt="Dr Adane">        
+				                
+								<h4>Dr. Adane Abraham</h4>
+								<p>Vice President for Research & TT (Chair)</p>
 							</div>
 							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
+						
 							</div>
-							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
+						
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
-								<h1 class="package-no">02</h1>
-								<h4>Business</h4>
-								<p>For the individuals</p>
+								<img src="img/DrGirma.jpg" class="img-circle"  width="150px" height="150px" alt="Dr Girma Gonfa">	
+								<h4>Dr. Girma Gonfa</h4>
+								<p>Research Director (Secretary)</p>
 							</div>
 							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
+						
 							</div>
-							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
+						
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
-								<h1 class="package-no">03</h1>
-								<h4>Premium</h4>
-								<p>For the individuals</p>
+						<img src="img/mesfin.jpg" class="img-circle"  width="150px" height="150px" alt="mesfin Tafesse">			
+								<h4>Dr. Mesfin Tafesse</h4>
+								<p> Memeber</p>
 							</div>
 							<div class="package-list">
-								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
+							
 							</div>
-							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
+						
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
-								<h1 class="package-no">04</h1>
-								<h4>Exclusive</h4>
-								<p>For the individuals</p>
+								<img src="img/yohannesregassa.png" class="img-circle"  width="150px" height="150px" alt="yohannes regessa">
+								<h4>Mr. Yohannes Regassa</h4>
+								<p> Member</p>
 							</div>
 							<div class="package-list">
 								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
-								</ul>
+							
 							</div>
-							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
-							</div>
-						</div>																		
+						
+						
+																				
 					</div>
 				</div>	
 			</section>
 
 
 
+                  <section class="price-area section-gap">
+				  <div class="container">
+				  <div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1> Editoral Board Members </h1>
+								
+							</div>
+						</div>
+					</div>					
+		
 
 
-			<!-- End price Area -->
-					
-			<!-- Start brand Area -->
-			<section class="brand-area section-gap">
-				<div class="container">
-					<div class="row logo-wrap">
-						<a class="col single-img" href="#">
-							<img class="d-block mx-auto" src="img/l1.png" alt="">
-						</a>
-						<a class="col single-img" href="#">
-							<img class="d-block mx-auto" src="img/l2.png" alt="">
-						</a>
-						<a class="col single-img" href="#">
-							<img class="d-block mx-auto" src="img/l3.png" alt="">
-						</a>
-						<a class="col single-img" href="#">
-							<img class="d-block mx-auto" src="img/l4.png" alt="">
-						</a>
-						<a class="col single-img" href="#">
-							<img class="d-block mx-auto" src="img/l5.png" alt="">
-						</a>
-					</div>	
+
+
+                    <!--              row                  -->
+
+					<div class="row">
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+
+                        	<img src="img/editoral/Samson.jpg" class="img-circle"  width="150px" height="150px" alt=Dr. Samson Mekbib">        
+				                
+								<h4>Dr. Samson Mekbib</h4>
+								<p>Member</p>
+							</div>
+							<div class="package-list">
+						
+							</div>
+						
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<img src="img/editoral/Madhu.jpg" class="img-circle"  width="150px" height="150px" alt="Dr. Madhu Thomas">	
+								<h4>Dr. Madhu Thomas</h4>
+								<p>Member</p>
+							</div>
+							<div class="package-list">
+						
+							</div>
+						
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+						<img src="img/editoral/speaker.bmp" class="img-circle"  width="150px" height="150px" alt="Dr. Abera Belay">			
+								<h4>Dr. Abera Belay</h4>
+								<p> Memeber</p>
+							</div>
+							<div class="package-list">
+							
+							</div>
+						
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<img src="img/editoral/Drsanjiv.jpg" class="img-circle"  width="150px" height="150px" alt="Dr. G. Sanjiv Rao">
+								<h4>Dr. G. Sanjiv Rao</h4>
+								<p> Member</p>
+							</div>
+							<div class="package-list">
+								<ul>
+							
+							</div>
+						
+						
+																				
+					</div>
 				</div>	
 			</section>
+
+
+
 			<!-- End brand Area -->	
 							
-				
-			<!-- Start callaction Area -->
-			<section class="callaction-area relative section-gap">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-10">
-							<h1 class="text-white">Huge Transaction in last Week</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-							</p>
-							<a class="callaction-btn" href="#">Become a Member</a>							
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End callaction Area -->
+		
 					
 
 			<!-- start footer Area -->	
