@@ -11,7 +11,7 @@ input[type=text], input[type=password] ,input[type=tel] ,select {
     display: inline-block;
     border: none;
     background: #f1f1f1;
-    color:black;
+    color:;
 }
 
 /* Add a background color when the inputs get focus */
@@ -101,4 +101,53 @@ hr {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
+}
+
+
+
+
+.submitpaper .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#008CBA;;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 300px;
+  height: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 95px;
+}
+
+.submitpaper .button span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitpaper .button span:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submitpaper .button:hover span 
+{
+  padding-right: 25px;
+}
+
+.submitpaper .button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+
 }

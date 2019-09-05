@@ -1,0 +1,227 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/elements/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Conference</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/nice-select.css">			
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="index.html#home">Home</a></li>
+				          <li><a href="index.html#paper">Paper</a></li>
+				          <li><a href="index.html#speakers">Speakers</a></li>
+				          <li><a href="index.html#schedule">Schedule</a></li>
+				 
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+			<section class="generic-banner relative">	
+				<div class="container">
+					<div class="row height align-items-center justify-content-center">
+						<div class="col-lg-10">
+							<div class="generic-banner-content">
+							
+							     <h1 class="section-title" style="color:#e7e7e7;">Best Paper Award</h1>
+                                 <div>
+                                 <p><h3 style="color:#e7e7e7;">Best paper and paper presentation may be considered for award.</h3></p>
+                                 </div>	
+							     </div>							
+						    </div>
+					</div>
+				</div>
+			</section>		
+			<!-- End banner Area -->
+		
+		<!-- About Generic Start -->
+		<div class="main-wrapper">
+			
+		
+
+			<!-- Start Generic Area -->
+			<section class="about-generic-area section-gap">
+				<div class="container border-top-generic">
+					
+					<div class="row">
+                       <section id="submit" class="section submit">
+                        <div class="container">
+                            <div class="row text-justify">
+                                <h3 class="section-title">Submission</h3>
+                                <div >
+                                    <p>High-quality full papers which at the time of submission, are not under review and have not already been published or accepted for publication elsewhere are solicited. The first page should include the paper's title, the abstract, a list of keywords indicating the paper's topic area(s), the authors' full names, affiliations, and e-mail addresses.</p>
+
+                                    <p>All accepted papers will be published in the conference proceedings. Authors are required to submit fully formatted papers (PDF), with graphs, images, and other special areas arranged as intended for the final publication. Papers should be written in English conforming to the IEEE standard conference format (8.5" x 11" - US letter, Two-Column). The final manuscript for publication will be limited to 6 IEEE pages. You can find a copy of the IEEE standard conference template for Microsoft Word formats <a class="custom-link" href="downloader.php?ieee">HERE.</a> Your paper must be printable in order to be accepted.</p>
+                                    <p style="color:orange"><b>Your paper size sholud not be greater than 10MB</b></p>
+                                </div>
+                                <?= $deadline_message ?>
+                            </div>
+                            <div id="form-area" class="row">
+                                <div class="col-md-12">
+                                    <h3 class="section-title">Submit Your Paper</h3>
+                                </div>
+                            </div>
+                            <form id="submission-form" action="" method="post" enctype="multipart/form-data" autocomplete="off">
+                                <div class="row">
+                                    <div id="submission_response" class="alert text-left"></div>
+                                
+                                    <label>Thematic Area:</label>
+                                    <select class="form-control" name="thematic" id="program" required>
+                                        <option value="Community">Community </option>
+                                        <option value="technology"> Technology </option>
+                                         
+                                    </select><br>
+                                    <label> Paper Title</label>
+                                    <input id="titleBar" class="form-control" type="text" name="title" placeholder="Paper Title"  required ><br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                    	<label> Author Name </label>
+                                        <input id="nameBar" class="form-control" type="text" name="name" placeholder="Author Name"  required ><br>
+                                    
+                                        <label>College:</label>
+                                        <select class="form-control" name="college" id="college" required >
+                                            <option ></option>
+                                     
+                                        </select>
+                                        <br>
+                                        <label>Department:</label>
+                                        <select class="form-control" name="department" id="department" required>
+                                            <option ></option>
+                                        </select>
+                                        <br>
+                                        <input id="phoneBar" class="form-control" type="tel" name="phone" placeholder="phone number"  required><br>
+                                        <input id="emailBar" class="form-control" type="email" name="email" placeholder="Email Address"  required><br>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input id="co-nameBar" class="form-control" type="text" name="co_name1" placeholder="Co-author Name"  ><br>
+                                     
+                                        <label>College:</label>
+                                        <select class="form-control" name="co_college1" id="co_college1">
+                                            <option value="Arch"> College of Architecture and Civil</option>
+                                            <option value="College of Electrical and Mechanical">College of Electrical and Mechanical </option>
+                                            <option value="College of Natural and Social "> College of Natural and Social</option>
+                                        </select>
+                                        <br>
+                                        <label>Department:</label>
+                                        <select class="form-control" name="co_department1" id="co_department1">
+                                            <option ></option>
+                                        </select>
+                                        <br>
+                                        <input id="co-phoneBar" class="form-control" type="tel" name="co_phone1" placeholder="phone number" ><br>
+                                        <input id="co-emailBar" class="form-control" type="email" name="co_email1" placeholder="Email Address"  ><br>
+                                    </div>
+
+                                    <input id="attachment" class="form-control" type="file" name="attachment" required><br>
+                                </div>
+                                <div class="text-center mt20">
+                                    <button type="submit" name="submit" class="btn btn-blue">Submit</button>
+                                </div>
+
+                            </form>
+                        </div>      
+                    </section>
+					</div>	
+				</div>
+			</section>
+	
+            
+			<section  id="contactus">	
+			<footer class="footer-area section-gap">
+			<div class="container">
+				
+			<div class="row">		
+
+             <div class="contact">
+            <p> <h3 class="section-title">Contact Us</h3></p>
+        
+        
+            
+            <p>Dr. Adane Abraham, Vice President for Research  &amp; TT
+            <br><i class="ion-email"></i> adaneab2016@gmail.com
+                <br><i class="ion-ios-telephone"></i> +251 930 097 652</p>
+          
+                <p>Dr. Girma Gonfa, Research Director           
+                <br><i class="ion-email"></i> girma.gonfa@aastu.edu.et                     
+                <br><i class="ion-ios-telephone"></i> +251 911 311 232</p>
+                
+            </div>
+                       
+						<div class="col-lg-8 col-md-6 col-sm-6  social-widget text-right">
+							<div class="single-footer-widget ">
+								<h6>Follow Us</h6>
+								<p>Let us be social</p>
+								<div class="col-lg-12 col-md-6 col-sm-6 footer-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-dribbble"></i></a>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
+					
+					<p class="footer-text">
+									
+            
+
+
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>	
+
+			</div>
+			</div>
+			</footer>
+			</section>							
+		
+			<!-- End footer Area -->	
+			
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/mail-script.js"></script>				
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
